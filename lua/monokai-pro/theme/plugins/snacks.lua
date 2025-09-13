@@ -231,6 +231,10 @@ function M.get(c, config, hp)
       bg = isBackgroundClear and transparent_bg or picker_bg,
       bold = true,
     },
+    SnacksPickerDir = {
+      fg = c.base.dimmed2,
+      bg = isBackgroundClear and transparent_bg or picker_bg,
+    },
   }
 end
 
