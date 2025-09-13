@@ -48,7 +48,7 @@ function M.get(c, config, hp)
     },
     SnacksNotifierTitleInfo = {
       fg = c.base.cyan,
-      bg = isBackgroundClear and transparent_bg or c.base.yellow,
+      bg = isBackgroundClear and transparent_bg or notifier_bg,
       bold = true,
       italic = true,
     },
@@ -70,7 +70,7 @@ function M.get(c, config, hp)
     },
     SnacksNotifierTitleWarn = {
       fg = c.base.yellow,
-      bg = isBackgroundClear and transparent_bg or c.base.yellow,
+      bg = isBackgroundClear and transparent_bg or notifier_bg,
       bold = true,
       italic = true,
     },
@@ -92,7 +92,7 @@ function M.get(c, config, hp)
     },
     SnacksNotifierTitleDebug = {
       fg = c.base.blue,
-      bg = isBackgroundClear and transparent_bg or c.base.yellow,
+      bg = isBackgroundClear and transparent_bg or notifier_bg,
       bold = true,
       italic = true,
     },
@@ -114,7 +114,7 @@ function M.get(c, config, hp)
     },
     SnacksNotifierTitleError = {
       fg = c.base.red,
-      bg = isBackgroundClear and transparent_bg or c.base.yellow,
+      bg = isBackgroundClear and transparent_bg or notifier_bg,
       bold = true,
       italic = true,
     },
@@ -136,7 +136,7 @@ function M.get(c, config, hp)
     },
     SnacksNotifierTitleTrace = {
       fg = c.base.dimmed1,
-      bg = isBackgroundClear and transparent_bg or c.base.yellow,
+      bg = isBackgroundClear and transparent_bg or notifier_bg,
       bold = true,
       italic = true,
     },
