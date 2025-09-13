@@ -142,7 +142,7 @@ function M.get(c, config, hp)
     },
     SnacksNotifierFooterTrace = { link = "DiagnosticHint" },
     SnacksNotifierBorderTrace = {
-      fg42 = c.base.dimmed1,
+      fg = c.base.dimmed1,
       bg = isBackgroundClear and transparent_bg or transparent_bg_border,
     },
 
