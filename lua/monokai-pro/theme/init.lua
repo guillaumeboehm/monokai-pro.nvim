@@ -46,6 +46,7 @@ local PLUGINS = {
   "renamer",
   "scrollbar",
   "snacks",
+  "neogit",
   "telescope",
   "toggleterm",
   "ufo",
