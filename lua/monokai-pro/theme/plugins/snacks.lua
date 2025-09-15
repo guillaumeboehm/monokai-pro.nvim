@@ -55,7 +55,7 @@ function M.get(c, config, hp)
         SnacksNotifierFooterInfo = { link = "DiagnosticInfo" },
         SnacksNotifierBorderInfo = {
             fg = c.base.cyan,
-            bg = isBackgroundClear and transparent_bg or transparent_bg_border,
+            bg = isBackgroundClear and transparent_bg or notifier_bg,
         },
 
         -- Notifier: Warn
@@ -77,7 +77,7 @@ function M.get(c, config, hp)
         SnacksNotifierFooterWarn = { link = "DiagnosticWarn" },
         SnacksNotifierBorderWarn = {
             fg = c.base.yellow,
-            bg = isBackgroundClear and transparent_bg or transparent_bg_border,
+            bg = isBackgroundClear and transparent_bg or notifier_bg,
         },
 
         -- Notifier: Debug
@@ -99,7 +99,7 @@ function M.get(c, config, hp)
         SnacksNotifierFooterDebug = { link = "DiagnosticHint" },
         SnacksNotifierBorderDebug = {
             fg = c.base.blue,
-            bg = isBackgroundClear and transparent_bg or transparent_bg_border,
+            bg = isBackgroundClear and transparent_bg or notifier_bg,
         },
 
         -- Notifier: Error
@@ -121,7 +121,7 @@ function M.get(c, config, hp)
         SnacksNotifierFooterError = { link = "DiagnosticError" },
         SnacksNotifierBorderError = {
             fg = c.base.red,
-            bg = isBackgroundClear and transparent_bg or transparent_bg_border,
+            bg = isBackgroundClear and transparent_bg or notifier_bg,
         },
 
         -- Notifier: Trace
@@ -143,7 +143,7 @@ function M.get(c, config, hp)
         SnacksNotifierFooterTrace = { link = "DiagnosticHint" },
         SnacksNotifierBorderTrace = {
             fg = c.base.dimmed1,
-            bg = isBackgroundClear and transparent_bg or transparent_bg_border,
+            bg = isBackgroundClear and transparent_bg or notifier_bg,
         },
 
         -- Dashboard
