@@ -95,7 +95,7 @@ function M.get(c, config, hp)
             bold = true,
         },
         NeogitGraphAuthor = {
-            fg = c.base.blue,
+            fg = c.base.cyan,
             bg = neogit_bg,
         },
         -- Commit view
@@ -193,20 +193,43 @@ function M.get(c, config, hp)
         -- NeogitHunkMergeHeaderHighlight  cterm=bold gui=bold guifg=#22252a guibg=#d15070
         -- NeogitHunkMergeHeader  cterm=bold gui=bold guifg=#303338 guibg=#7a7c7f
 
+        NeogitSectionHeader = {
+            fg = c.base.magenta,
+            -- bg = c.base.magenta,
+            bold = true,
+            underline = true,
+        },
+        -- Change state
+        NeogitChangeUnmerged = {
+            fg = c.base.yellow,
+            bold = true,
+            italic = true,
+        },
+        NeogitChangeUpdated = {
+            fg = c.base.blue,
+            bold = true,
+            italic = true,
+        },
+        NeogitChangeRenamed = { link = "NeogitChangeUpdated" },
+        NeogitChangeCopied = { link = "NeogitChangeUpdated" },
+        NeogitChangeModified = { link = "NeogitChangeUpdated" },
+        NeogitChangeNewFile = {
+            fg = c.base.green,
+            bold = true,
+            italic = true,
+        },
+        NeogitChangeAdded = { link = "NeogitChangeNewFile" },
+        NeogitChangeDeleted = {
+            fg = c.base.red,
+            bold = true,
+            italic = true,
+        },
+
 -- NeogitActiveItem  cterm=bold gui=bold guifg=#22252a guibg=#d17e55
 -- NeogitFloatHeaderHighlight  cterm=bold gui=bold guifg=#ff6188 guibg=#303338
 -- NeogitFloatHeader  cterm=bold gui=bold guibg=#22252a
 -- NeogitTagDistance  guifg=#ff6188
 -- NeogitTagName   guifg=#ffd866
--- NeogitSectionHeader  cterm=bold gui=bold guifg=#d15070
--- NeogitChangeUnmerged  cterm=bold,italic gui=bold,italic guifg=#d4b355
--- NeogitChangeUpdated  cterm=bold,italic gui=bold,italic guifg=#d17e55
--- NeogitChangeRenamed  cterm=bold,italic gui=bold,italic guifg=#d15070
--- NeogitChangeCopied  cterm=bold,italic gui=bold,italic guifg=#d15070
--- NeogitChangeDeleted  cterm=bold,italic gui=bold,italic guifg=#d15070
--- NeogitChangeNewFile  cterm=bold,italic gui=bold,italic guifg=#d1b154
--- NeogitChangeAdded  cterm=bold,italic gui=bold,italic guifg=#d1b154
--- NeogitChangeModified  cterm=bold,italic gui=bold,italic guifg=#d15070
 -- NeogitUnpulledFrom  cterm=bold gui=bold guifg=#d15070
 -- NeogitUnpushedTo  cterm=bold gui=bold guifg=#d15070
 -- NeogitUnmergedInto  cterm=bold gui=bold guifg=#d15070
