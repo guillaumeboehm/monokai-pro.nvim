@@ -224,23 +224,32 @@ function M.get(c, config, hp)
             bold = true,
             italic = true,
         },
+        -- Popup toggle keys
+        NeogitPopupActionKey = {
+            fg = c.base.red,
+        },
+        NeogitPopupConfigKey = { link = "NeogitPopupActionKey" },
+        NeogitPopupOptionKey = { link = "NeogitPopupActionKey" },
+        NeogitPopupSwitchKey = { link = "NeogitPopupActionKey" },
+
+        NeogitRemote = {
+            fg = c.base.cyan,
+            bold = true,
+        },
+        NeogitTagName = {
+            fg = c.base.yellow,
+        },
 
 -- NeogitActiveItem  cterm=bold gui=bold guifg=#22252a guibg=#d17e55
 -- NeogitFloatHeaderHighlight  cterm=bold gui=bold guifg=#ff6188 guibg=#303338
 -- NeogitFloatHeader  cterm=bold gui=bold guibg=#22252a
 -- NeogitTagDistance  guifg=#ff6188
--- NeogitTagName   guifg=#ffd866
 -- NeogitUnpulledFrom  cterm=bold gui=bold guifg=#d15070
 -- NeogitUnpushedTo  cterm=bold gui=bold guifg=#d15070
 -- NeogitUnmergedInto  cterm=bold gui=bold guifg=#d15070
--- NeogitRemote    cterm=bold gui=bold guifg=#ffd866
 -- NeogitBranchHead  cterm=bold,underline gui=bold,underline guifg=#ff6188
 -- NeogitBranch    cterm=bold gui=bold guifg=#ff6188
 -- NeogitFilePath  cterm=italic gui=italic guifg=#ff6188
--- NeogitPopupActionKey  guifg=#ff6188
--- NeogitPopupConfigKey  guifg=#ff6188
--- NeogitPopupOptionKey  guifg=#ff6188
--- NeogitPopupSwitchKey  guifg=#ff6188
 -- NeogitPopupBold  cterm=bold gui=bold
 
     }
