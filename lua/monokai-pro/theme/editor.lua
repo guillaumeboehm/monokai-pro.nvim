@@ -104,7 +104,7 @@ M.setup = function(c, config, hp)
       fg = c.editor.foreground,
     },
     NormalFloat = float_winBackgroundClear and {
-      bg = c.editor.background,
+      bg = hp.blend(c.editor.background, 0.9, c.base.black),
       fg = c.editorSuggestWidget.foreground,
     } or {
       -- bg = c.editorHoverWidget.background,
