@@ -234,6 +234,15 @@ function M.get(c, config, hp)
         SnacksPickerDirectory = {
             fg = common_fg,
         },
+        SnacksPickerPathHidden = {
+            fg = hp.blend(common_fg, 0.5, c.editor.background),
+        },
+        SnacksPickerPathIgnored = {
+            fg = hp.blend(common_fg, 0.8, c.editor.background),
+        },
+        SnacksPickerTotals = {
+            fg = hp.blend(c.base.yellow, 0.7, c.editor.background),
+        },
     }
 end
 
