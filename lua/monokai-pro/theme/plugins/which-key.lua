@@ -2,7 +2,7 @@ local M = {}
 
 --- @param c Colorscheme The color palette
 --- @param config Config
-function M.get(c, config, _)
+function M.get(c, config, hp)
   local isBackgroundClear = vim.tbl_contains(config.background_clear, "which-key")
   local whichkey_bg = c.editorSuggestWidget.background
   local transparent_bg = c.editor.background
@@ -18,7 +18,7 @@ function M.get(c, config, _)
       fg = transparent_bg_border,
     } or {
       bg = whichkey_bg,
-      fg = whichkey_bg,
+      fg = hp.blend(whichkey_bg, 0.8, c.base.white),
     },
   }
 end
