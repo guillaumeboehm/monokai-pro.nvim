@@ -23,6 +23,7 @@ local PLUGINS = {
   "blink",
   "breadcrumb",
   "bufferline",
+  "bqf",
   "cmp",
   "coc",
   "dashboard",
