@@ -243,6 +243,9 @@ function M.get(c, config, hp)
     SnacksPickerTotals = {
       fg = hp.blend(c.base.yellow, 0.7, c.editor.background),
     },
+    SnacksPickerGitStatusUntracked = {
+      fg = c.base.white,
+    },
   }
 end
 
